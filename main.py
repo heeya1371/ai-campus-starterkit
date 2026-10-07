@@ -158,7 +158,7 @@ def get_filtered_todos(db: sqlite3.Connection = Depends(get_db)):
     return clean_todos
 
 
-# 3. [관리자 인증 & 삭제]
+# 3. [관리자 인증 & 삭제]asdasd
 @app.post("/admin/login", response_model=AdminLoginResponse)
 def admin_login(body: AdminLoginRequest):
     if body.password != ADMIN_PASSWORD:
